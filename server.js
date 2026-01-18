@@ -24,8 +24,7 @@ app.post("/api/book-now", async (req, res) => {
       });
     }
 
-    // Format datetime (YYYY-MM-DD HH:MM)
-    const formattedDateTime = String(dateTime).replace("T", " ");
+   
 
     // Nodemailer transporter
     const transporter = nodemailer.createTransport({
@@ -147,3 +146,4 @@ app.listen(PORT, () => {
 // const PORT = process.env.PORT || 5000;
 
 // app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
